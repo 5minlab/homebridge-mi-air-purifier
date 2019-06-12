@@ -344,12 +344,12 @@ MiAirPurifier.prototype = {
             return;
         }
 
-        // Overwirte to manual mode
-        if (this.mode != 'favorite') {
-            this.device.setMode('favorite')
-                .then()
-                .catch(err => callback(err));
-        }
+        // // Overwirte to manual mode
+        // if (this.mode != 'favorite') {
+        //     this.device.setMode('favorite')
+        //         .then()
+        //         .catch(err => callback(err));
+        // }
 
         // Set favorite level
         const level = Math.ceil(speed / 6.25);
